@@ -28,6 +28,13 @@ enum Grade {
   O,
 }
 console.log(Grade.O); //8
+enum GameStatus1 {
+  Not_Started = 'not-started',
+  Started = 'started',
+  Finised = 'complete',
+}
+//GameStatus1.Finised = 'OkayBhaithik';//not posible since value is only read only if //we used enum as like javascript Object.freeze({}) values can not be change
+console.log(GameStatus1.Finised);
 //literal types
 let name: 'Dave';
 //name ='isarar'

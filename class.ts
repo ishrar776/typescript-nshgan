@@ -17,4 +17,5 @@ class Coder {
 }
 const result = new Coder(34, 'israr', 'au0097');
 console.log(result.getDetails()); //Your name is israr and true basic 34
-console.log(result.name); //israr
+console.log(result.name); //israr// private are only acess within block of class and
+//protected can acess via block and derived class
