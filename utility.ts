@@ -1,4 +1,4 @@
-//// Partial
+//// 1)- Partial
 interface Assignment {
   studentId: string;
   title: string;
@@ -18,7 +18,7 @@ const updateAssignment = (
 };
 console.log(updateAssignment(detailsAssign, { grade: 478 }));
 const exactValue: Assignment = updateAssignment(detailsAssign, { grade: 478 });
-//Required
+// 2 )- Required
 const updateAssignmentRequired = (assign: Required<Assignment>): Assignment => {
   return assign;
 };
@@ -30,7 +30,7 @@ const fixedAssesmentValue: Readonly<Assignment> = {
   verified: true,
 };
 //Record
-// Record
+// 3)- Record
 const hexColorMap: Record<string, string> = {
   red: 'FF0000',
   green: '00FF00',
